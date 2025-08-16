@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSO 보안 문서 시스템</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 800px;
+            padding: 40px;
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #c00;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #c00;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .header .subtitle {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #aaa;
+        }
+        .content {
+            text-align: center;
+        }
+        .content p {
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+        .document-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .document-list li {
+            margin-bottom: 15px;
+        }
+        .document-list a {
+            display: block;
+            padding: 20px;
+            background-color: #3a3a3a;
+            border: 1px solid #555;
+            text-decoration: none;
+            color: #e0e0e0;
+            font-size: 16px;
+            transition: background-color 0.3s, border-color 0.3s;
+            text-align: left;
+        }
+        .document-list a:hover {
+            background-color: #4a4a4a;
+            border-color: #c00;
+        }
+        .doc-id {
+            font-family: 'Courier New', Courier, monospace;
+            color: #888;
+            font-size: 14px;
+            float: right;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>TOP SECRET // EYES ONLY</h1>
+            <div class="subtitle">국가안보실 보안 문서 열람 시스템</div>
+        </div>
+
+        <div class="content">
+            <p>열람할 문서를 선택하십시오. 모든 접근은 기록 및 감시됩니다.</p>
+            
+            <ul class="document-list">
+                <li>
+                    <a href="report_ww3.html">
+                        제 3차 세계대전 전개 보고서
+                        <span class="doc-id">문서 번호: WW3-KOR-7701</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="report_pyongyang.html">
+                        평양 신탁통치령 보고서
+                        <span class="doc-id">문서 번호: PY-MANDATE-REP-04B</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="report_corporations.html">
+                        평양 내 거대 기업 보고서
+                        <span class="doc-id">문서 번호: PY-CORP-ANALYSIS-09</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>경고: 본 시스템에 대한 무단 접근은 관련 법규에 의거하여 엄중히 처벌됩니다.</p>
+            <p>접속 IP 및 모든 활동은 실시간으로 기록됩니다.</p>
+        </div>
+    </div>
+
+</body>
+</html>
