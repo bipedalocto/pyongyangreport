@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평양 그림자 통신망 > 의뢰 게시판</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .board-container {
+            max-width: 960px;
+            margin: 40px auto;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        .board-header {
+            background-color: #c00;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .post-title {
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .post-title h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .post-meta {
+            font-size: 13px;
+            color: #888;
+        }
+        .post-content {
+            display: flex;
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .user-profile {
+            flex: 0 0 150px;
+            text-align: center;
+            padding-right: 20px;
+            border-right: 1px solid #333;
+        }
+        .user-profile .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: #555;
+            border: 2px solid #888;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            /* Simple SVG for a rabbit-like shape */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23ccc' d='M50 10 C 40 10, 35 20, 35 30 S 40 50, 50 50 S 65 40, 65 30 S 60 10, 50 10 M30 35 C 20 35, 15 50, 20 65 S 40 85, 50 85 S 80 80, 80 65 S 70 35, 60 35 Z'/%3E%3C/svg%3E");
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .user-profile .username {
+            font-weight: bold;
+            color: #4CAF50; /* Green for fixers */
+            font-size: 16px;
+        }
+        .user-profile .usertitle {
+            font-size: 12px;
+            color: #aaa;
+        }
+        .post-main {
+            padding-left: 20px;
+            flex: 1;
+        }
+        .post-main p {
+            margin: 0 0 15px 0;
+        }
+        .job-summary {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            padding: 20px;
+            margin-top: 25px;
+        }
+        .job-summary h3 {
+            margin-top: 0;
+            color: #c00;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+        .job-summary ul {
+            list-style: none;
+            padding: 0;
+        }
+        .job-summary li {
+            margin-bottom: 10px;
+        }
+        .job-summary li strong {
+            display: inline-block;
+            width: 100px;
+            color: #bbb;
+        }
+        .job-summary .reward {
+            color: #FFD700;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #111;
+            border-left: 3px solid #4CAF50;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="board-container">
+        <div class="board-header">
+            평양 그림자 통신망 (Pyongyang Shadow Net) - 의뢰 게시판
+        </div>
+        <div class="post-title">
+            <h2>[긴급/회수] SLC 화물 회수 건. 실력 있는 토끼들 구함.</h2>
+            <div class="post-meta">게시 시간: 2085. 11. 06. 02:17:44 | 게시물 ID: #8A0F3C</div>
+        </div>
+        <div class="post-content">
+            <div class="user-profile">
+                <div class="avatar"></div>
+                <div class="username">자이치크</div>
+                <div class="usertitle">정보 중개인</div>
+            </div>
+            <div class="post-main">
+                <p>다들 돈 많이 벌고 싶지? 마침 좋은 일거리가 하나 들어왔어. 뻔한 소리 같지만 이번 건은 진짜야.</p>
+                <p>SLC의 배송 관리자 중 한 멍청이가 주소 코드 하나를 잘못 썼어. 평소라면 한번 더 왔다 가는 수고 정도로 해결될 일이지만... 운이 나빴지, 수령인이 좀 질이 나쁜 놈이었거든. 덕분에 우리 토끼들 주머니가 두둑해질 기회가 생긴 거고.</p>
+                <p>'스틸랴가'라는 루스키인데 들어 봤어? 레드 포지에서 좀 논다 하는 놈들은 알지도 모르겠네. 모르면 말고. 아무튼 그놈은 REC 구역 경계에 있는 '더스트(Dust)'라는 클럽의 지배인이야. 근데 알잖아? 평양 클럽은 다 깡패들 소유인 거. 그놈도 깡패야. 족보는 복잡하니까 알 필요 없고... 약 파는 쪽 놈이지. REC 뒤를 핥아대는 놈들이랑 연줄이 있다는 소문도 있고.</p>
+                <p>아무튼 화물은 그 놈이 클럽 지하 창고에 짱박아 놨을 거야. 보안도 빡셀 거고, 지키는 놈들도 성가시게 굴겠지. 찾기 빡셀 거 같긴 한데, 뭐 어쩌겠어. 그래도 돈은 꽤 준다니까 관심 있으면 연락 줘. 만남을 주선해 줄게.</p>
+
+                <div class="job-summary">
+                    <h3>의뢰 요약</h3>
+                    <ul>
+                        <li><strong>목표:</strong> SLC 소유의 화물 회수.</li>
+                        <li><strong>장소:</strong> 레드 포지 구역, 클럽 '더스트' 지하 창고.</li>
+                        <li><strong>예상 장애물:</strong> 스틸랴가 휘하의 무장 조직원, 클럽 내 보안 시스템, REC와의 잠재적 마찰 가능성.</li>
+                        <li><strong>요구 조건:</strong> 수단과 방법은 따지지 않음. 조용히 처리하든, 시끄럽게 처리하든 결과만 가져오면 됨. 단, 화물 파손 시 보수는 없음.</li>
+                        <li><strong>보수:</strong> <span class="reward">인당 최소 5,000 DC.</span> 팀의 실적과 협상에 따라 상향 조정 가능.</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    관심 있는 팀은 내 암호화 채널(ID: Zaichik_77)로 팀 구성과 주요 경력 요약해서 보내. 간 보기는 사절.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
