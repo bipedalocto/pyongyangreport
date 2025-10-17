@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강의 기록: “전사” 편</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: 'Gowun Batang', serif;
+            background-color: #fdfaf3; /* 양피지와 비슷한 부드러운 배경색 */
+            color: #4a3c31; /* 너무 검지 않은 고서의 잉크 색 */
+            line-height: 1.9;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 책의 한 페이지를 모사한 메인 컨테이너 */
+        .book-page {
+            max-width: 800px;
+            margin: 3rem auto; /* 위아래 여백 */
+            padding: 3rem 4rem; /* 안쪽 여백 */
+            background-color: #fffef9;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e0d9c9;
+        }
+
+        /* 문단 스타일 */
+        p {
+            text-align: justify; /* 양쪽 정렬로 단정한 느낌 부여 */
+            margin-bottom: 1.7em;
+            text-indent: 1em; /* 문단 첫 줄 들여쓰기 */
+        }
+
+        /* 문단 첫 글자 장식 (Drop Cap) */
+        .book-page > p:first-of-type::first-letter {
+            font-size: 4em;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.1em;
+            margin-top: 0.1em;
+            font-weight: 700;
+        }
+        
+        /* 첫 문단은 들여쓰기 없음 */
+        .book-page > p:first-of-type {
+            text-indent: 0;
+        }
+        
+        /* 인용/출처 부분 스타일 */
+        .attribution {
+            text-align: right;
+            font-style: italic;
+            font-size: 0.95em;
+            margin-top: 3em;
+        }
+        
+        /* 문답 부분 도입부 */
+        .dialogue-intro {
+            text-align: center;
+            font-style: italic;
+            margin-top: 4em;
+            margin-bottom: 2em;
+        }
+        
+        /* 문답 대화 스타일 (들여쓰기 없음) */
+        .dialogue {
+            text-indent: 0;
+        }
+
+        /* 각주 스타일 */
+        .footnotes {
+            margin-top: 4em;
+            padding-top: 1em;
+            border-top: 1px solid #d3c7b3;
+            font-size: 0.9em;
+            color: #6a5a4d;
+        }
+
+        .footnotes ol {
+            padding-left: 20px;
+        }
+        
+        .footnotes li {
+            text-align: left;
+        }
+        
+        sup {
+            line-height: 0;
+            vertical-align: super;
+            font-size: 0.7em;
+        }
+        
+        a {
+            color: #8b4513; /* 너무 튀지 않는 고동색 링크 */
+            text-decoration: none;
+        }
+
+        /* 반응형 웹 디자인: 모바일 환경 */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .book-page {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            /* 모바일에서는 드롭캡 크기 축소 */
+            .book-page > p:first-of-type::first-letter {
+                font-size: 3.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-page">
+        <p>제국의 전사단은 그 역사가 오래되었기에, 그들의 언어는 대륙 곳곳의 전사들에게 통용되고는 한다.</p>
+
+        <p>그들에게는 “명인”이라는 칭호가 있다. 한 가지 병장기의 사용에 극도로 숙달되어, 그 경지가 기록에 남을 정도인 자를 부르는 말이다.</p>
+
+        <p>명인의 기준은 간단하다. 세 명의 무장한, 전투 경험이 있으며 자신의 병기에 숙달된 병사와 맞붙어 쓰러뜨릴 것.</p>
+
+        <p>세 명이라는 말은 언뜻 시시하게 들린다. 그리하여 명인의 칭호에 도전한 전사는 수없이 많았다. 허나 그 시험을 통과한 이는 극히 적다.</p>
+        <p>전투를 경험하여 생과 사를 나누는 일에 참여한 병사 셋이, 자신에게 익숙한 병기를 들고 갑주를 입은 채 한 명을 상대한다.</p>
+        <p>무지한 자를 상대하는 법은 통하지 않는다, 그들은 모두 전투의 기본을 익혔으므로.</p>
+
+        <p>빠르게 죽이는 수법조차 쉬이 통하지 않는다. 머리와 가슴, 어깨가 갑주로 보호받고 있으므로,</p>
+
+        <p>교묘한 재주로 쓰러뜨리기에도 여의치 않다. 한 병사에게 시간을 끌면 다른 둘이 배후를 노릴 것이므로.</p>
+        <p>그렇다면 명인의 경지에 다다른 전사에게 요구되는 것은 무엇인가?</p>
+
+        <p>다수를 상대함에도 망설임없이 거리를 좁혀 베고 찌르는 담대함.</p>
+        <p>갑주가 보호해주지 못하는 안면, 손목 안쪽, 겨드랑이 등의 좁은 범위를 놓치지 않고 치명적인 살수를 펼치는 정교함.</p>
+        <p>그리고 혼란스러운 난전에서 안전한 위치를 쉴새없이 찾아 움직이는 기민함까지.</p>
+
+        <p>이러한 덕목을 두루 갖춘 소위 명인은 비록 인간의 뼈와 살로 이루어졌으나, 뭇 사람과 같다고 보기 어려운 무위를 발휘한다.</p>
+        <p>그들에게 있어서 대부분의 전투는 시험의 열화판에 불과하다.</p>
+
+        <p>예로, 검객이자 기사인 린 사빈은 스물여섯의 나이에 명인이 되었으며 서른둘의 나이에 제국 중남부를 여행하던 중 농노 반란에 휩쓸리게 되었다.</p>
+        <p>사빈 경을 덮친 농노의 수는 열넷, 그들은 쇠스랑과 손도끼 따위로 무장하였으며 때와 장소는 한낮의 포도밭이었다.</p>
+        <p>사빈 경은 약간의 멍과 생채기를 얻었으며, 농노들은 모두 도륙당하였다.</p>
+
+        <p>이유는 다음과 같다.</p> 농노의 수가 열넷이라고는 하나, 사람은 본디 여럿이 한 사람을 치는 일에 익숙하지 못하다. 서로 가진 박자가 다르고, 병기가 서로 얽히기 쉽기 때문이다.</p>
+
+        <p>엄하게 훈련된 병사조차 셋이 한 명을 치는 것이 합공에 있어 가장 효율적이라 여기니, 농노들을 상대하는 사빈 경은 그저 무지렁이 열넷을 하나둘씩 상대하면 그만이었다.</p>
+        <p>또한 그들의 무장은 빈약하여 제대로 된 갑주 없이 누비옷을 껴입은 것에 지나지 않았으니, 머리와 사지가 그대로 노출되어 한 번의 매서운 검격으로도 끊어질 수준이었다.</p>
+        <p>그리하여 벌어진 일은 다음과 같다.</p>
+
+        <p>린 사빈은 농노들을 진정시키려 노력하였으나, 그들은 기사의 자비를 나약함으로 여기어 더욱 기고만장하게 다가섰다.</p>
+        <p>농노의 대장격인 사내가 거리를 넘어들자, 기사는 칼을 뽑아듬과 동시에 망설임 없는 작은 베기<sup><a href="#footnote-1" id="footnote-ref-1">1</a></sup>로 그의 머리를 쪼개어 쓰러뜨렸다.</p>
+        <p>대장을 잃은 농노들이 당황하자, 기사는 다음과 같이 행동하였다. 그는 날랜 걸음으로 다가가 농노 중 짧은 병기를 쥔 자의 다리를 낮은 베기로 쳐 끊어냈으며, 긴 병기를 쥔 자의 창대를 끌어내 넘어뜨린 뒤 가슴을 내리찔러 죽였다.</p>
+        <p>피와 공포가 그들 사이에서 차오르자, 기사는 이리처럼 달려들어 높은 베기로 그들의 이마를 가르고, 휘어 베기로 손목을 잘라냈으며, 먼 베기로 얼굴을 저며 거푸 쓰러뜨렸다.</p>
+        <p>발악하듯 내지르는 흉기는 기사의 칼에 막히거나 흉갑에 미끄러지고 말았으며, 그가 얻은 약간의 상처는 스스로 포도나무의 뿌리에 걸려 바닥을 뒹구는 와중에 얻은 것 뿐이었으니.</p>
+        <p>결국 여섯의 농노는 그 자리에서 죽임당하였으며, 도망친 나머지 여덟마저 분노한 기사의 추적에 의해 하나씩 땅의 먹이가 되었다.</p>
+
+        <p class="attribution">- 학자이자 건축가, 저명한 검객. 비에 학당의 고등 검술 교수 아이데 프로카옌의 강의 기록. “전사” 편에서 발췌.</p>
+        
+        <hr>
+
+        <p class="dialogue-intro">이하 내용은 강의 이후 프로카옌 교수와 신원 미상의 학생 사이의 문답이다.</p>
+
+        <p class="dialogue">“그래, 이 일화에서 그대가 얻은 가르침은 무엇인가?”</p>
+        <p class="dialogue">“숙련되지 않은 다수를 상대할 때에는 선제적인 공세로 공포를 심어줄 것, 거리를 유지하며 먼 공격으로 일방적인 피해를 입힐 것, 찌르기를 지양하고 베는 공격으로 제압할 것.”</p>
+        <p class="dialogue">“어째서 그러한가? 우선 첫 번째부터.”</p>
+        <p class="dialogue">“무지한 자는 자신이 맞서는 것의 위험을 모르니, 일깨움으로서 그들의 망설임을 유도할 수 있습니다. 농노는 칼에 맞아본 적이 없고, 죽는다는 실감을 한 적도 없습니다. 가르침받지 않은 자의 가장 큰 적은 두려움이니 같은 편에 서는 것이 옳습니다.”</p>
+        <p class="dialogue">“다음은?”</p>
+        <p class="dialogue">“거리가 좁으면 난전으로 이어지며, 혹여 붙잡히면 한 팔은 두 팔을 이길 수 없습니다. 멀리서 치면 강하게 치기 어려우나, 무장이 빈약한 적은 병기의 끄트머리만으로도 얼굴 가죽을 가르거나 사지의 말단을 끊어 제압할 수 있습니다. 쉬운 길이 있다면 택하는 것이 옳습니다.”</p>
+        <p class="dialogue">“마지막은?”</p>
+        <p class="dialogue">“찌르는 것은 확실하게 상대를 끊을 수 있으나, 살에 파묻힌 칼을 뽑는 것에서 문제가 생길 수 있으며 찌르는 동안은 방비가 허술합니다. 베는 것은 공방이 한 번에 이루어집니다. 베는 것의 약점은 본디 막히기 쉽다는 것이나, 무지한 자는 막을 수 없으니 불리한 점이 없습니다. 결점이 없으니 본받음이 옳습니다.”</p>
+        <p class="dialogue">“훌륭하다. 그대는 좋은 학생이군.”</p>
+
+        <div class="footnotes">
+            <ol>
+                <li id="footnote-1">몸 바깥을 향하는 대각선 내려베기 <a href="#footnote-ref-1" title="본문으로 돌아가기">↩</a></li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>
